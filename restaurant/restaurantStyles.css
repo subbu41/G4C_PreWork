@@ -1,0 +1,44 @@
+
+#title{
+	font-family: Verdana, Helvetica, Serif;
+	font-style: italic;
+	font-stretch: normal;
+	font-weight: 400;
+	color:#26529A;
+	text-align: center;
+}
+
+#footer{
+		font-family: Verdana, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: small;
+		font-style: oblique;
+		color: #1533AE; /*essay editor - colourlovers.com*/
+		line-height: 9px;
+		text-align: center;
+}
+
+
+/*body{
+	font-family: Lucida Calligraphy, Helvetica, Sans-serif;
+	background-color: #D9E3E5; /* lingua Artistica - colourlovers.com*/
+} */
+a{
+	font-family: Arial;
+	text-decoration: underline;
+	font-weight: none;
+}
+a:link{
+	color: #1533AE; /* essay editor - colourlovers.com */
+}
+a:hover{
+	color: #26529A; /* Kataklysm - colourlovers.com */
+	font-weight: bold;
+}
+a:visited{
+	color: #94110E; /* Forest Friends - coloutlovers.com */
+}
+a:active{
+	color: #8c2238; /* chay33 - coloutlovers.com */
+	text-decoration: none;
+}

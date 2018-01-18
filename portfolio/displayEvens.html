@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Display Even Numbers</title>
+		<script type="text/JavaScript">
+			function getEvenNumbers()
+			{
+				var startNum = Number(document.getElementById("startingNumber").value);
+				var endNum = Number(document.getElementById("endingNumber").value);
+				var stepNum = Number(document.getElementById("step").value);
+				
+				var evenNum = new Array();
+				for(i=startNum;i<=endNum;i+=stepNum)
+				{
+					console.log("i value is: "+i);
+					if(i%2 == 0) //even number
+					{
+						 evenNum.push(i);
+					}
+				}
+				var evenNumList ="";
+				for(l=0;l<evenNum.length;l++)
+				{
+					evenNumList = evenNumList+ "<tr><td>" + evenNum[l] + "</td></tr>";
+				}
+				
+				var outMessage = "Here are the even numbers between " + startNum + " and " + endNum + " by "+ stepNum +"'s: "
+				document.getElementById("evenNumberMessage").innerHTML = outMessage
+				document.getElementById("evenNumberList").innerHTML = evenNumList
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Display Even Numbers</h1>
+		<div>
+			<label>Starting Number : </label><input type="number" id="startingNumber" />
+		</div>
+		<div>
+			<label>Ending Number : </label><input type="text" id="endingNumber" />
+		</div>
+		<div>
+			<label>Step : </label><input type="text" id="step" />
+		</div>
+		<div>	
+			<button onclick="getEvenNumbers();">Display Evens</button>
+		</div>
+		
+		<div id="evenNumberMessage"></div>
+		<div>
+			<table id="evenNumberList">
+				
+			</table>
+		</div>
+	</body>
+
+</html>
