@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Subbu's Kitchen - Contact Us</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<style>
 			body{
@@ -15,8 +17,9 @@
 			}
 			th{
 				/*font-family: Lucida Handwriting, Helvetica, sans-serif;*/
-				font-size:20px;
+				font-size:14px;
 				text-align: center;
+				height: 100px;
 				/*border: 1px solid black;*/
 				padding: 5px 10px;
 			}
@@ -37,22 +40,29 @@
 		<div id="title">
 			<table width="100%"><h1>Subbu's Kitchen<h1></table>
 		</div>
-		<div id="nav">
+		
+		<div class="container-fluid" id="nav">
 			<hr />
-				<table width="300"  style="background-color:white;">
-				<td><a href="reshome.html" target="_blank">Home</a> </td>
+			<ul class="nav nav-pills">
+				<li><a href="reshome.html" target="_blank" class="active"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="resMenu.html" target="_blank">Menu</a></li>
+				<li class="active"><a href="resContact.html" target="_blank">Contact Us</a></li>
+				<!-- <table width="300">
+				<td><a href="reshome.html" target="_blank" class="active">Home</a> </td>
 				<td><a href="resMenu.html" target="_blank">Menu</a></td>
-				<td><a href="resContact.html" target="_blank" class="active">Contact Us</a></td>
-				</table>
+				<td><a href="resContact.html" target="_blank">Contact Us</a></td>
+				</table> -->
+			</ul>
 			<hr />
 		</div>
+
 		<div id="Content">
 			<table width="100%">
 				<th align="center"><h2><u>Contact Us</u></h2></th>
 			</table>
 		</div>
 		<form action="submit.html" method="POST">
-			<table width="1650" >
+			<table width="100%" >
 				<tr>
 					<td align="Right"><label for="name">Name:</label></td>
 					<td align="left"><input type="text" name="name"></td>
@@ -99,7 +109,10 @@
 			</table>
 			<table width="100%">
 				<tr>
-					<th align="center"><input type="submit" name="sendrequest" value="Send Request"></th>
+					<th align="center"><button type="submit" id="submitButton" class="btn btn-default">Send Request</button>
+<!-- 					<th align="center">
+					<button type="submit" class="=btn">Send Request</button>
+ -->					</th>
 				</tr>
 				<tr></tr>
 			</table>
@@ -115,7 +128,7 @@
 				</table>-->
 				<p>1241 Ross Tollway</p>
 				<p>Acton, MA - 12457</p>
-				<p>Ph: 1-888-945-4784</p>
+				<p><span class="glyphicon glyphicon-earphone"></span> 1-888-945-4784</p>
 			</footer>
 		</div>
 	</body>

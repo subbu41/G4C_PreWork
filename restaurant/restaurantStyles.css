@@ -29,10 +29,12 @@ a{
 	font-weight: none;
 }
 a:link{
+//	background-color: #33b5e5;
 	color: #1533AE; /* essay editor - colourlovers.com */
+
 }
 a:hover{
-	color: #26529A; /* Kataklysm - colourlovers.com */
+	background-color: #ACDDD6;
 	font-weight: bold;
 }
 a:visited{
